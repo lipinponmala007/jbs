@@ -1,0 +1,4 @@
+name = Comments to application 
+description = To use the comments form as the jobs application
+package = Custom
+core = 7.x
