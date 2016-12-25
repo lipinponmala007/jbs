@@ -1,10 +1,12 @@
 <?php
-function comments_toapp_form_alter(&$form, &$form_state, $form_id) { if ($form['#form_id'] == 'comment_node_jobs_form') {
+function comments_toapp_form_alter(&$form, &$form_state, $form_id) { 
+  if ($form['#form_id'] == 'comment_node_jobs_form') {
+  }
   if (arg(0) == 'comment') {
     drupal_set_title('Application form');
-    }$form['actions']['submit']['#value'] = t('Apply');
-    // dsm($form);
+    $form['actions']['submit']['#value'] = t('Apply');
   }
+    // dsm($form);
   if ($form['#form_id'] == 'jobs_node_form') {
 
     if ($form['nid']['#value'] == NULL) {
@@ -20,6 +22,15 @@ function comments_toapp_form_alter(&$form, &$form_state, $form_id) { if ($form['
   }
   if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-jobs-search-page'){
     $form['#attributes'] = array('class'=>array('form-horizontal search_form home-page'));
+    
+    // Set placeholders for known search fields
+    $infos = $form['#info'];
+    foreach ($infos as $key => $filter) {
+      $label = $filter['label'];
+      unset($form['#info'][$key]['label']);
+      $form[$filter['value']]['#attributes'] = array('placeholder' => array($label));
+    }
+    
   }
 }
 
