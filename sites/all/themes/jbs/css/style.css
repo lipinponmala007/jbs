@@ -5172,8 +5172,19 @@ body.home-page {
 .panel-list-item  .panel-body h3 {
 	margin: 0 0 20px;
 }
-.panel-list-item  .panel-body .field-type-text-with-summary {
+.panel-list-item .panel-body .field-type-text-with-summary {
 	margin: 0 0 20px;	
+}
+.panel-list-item .field-group {
+	margin-bottom: 10px;
+}
+.panel-list-item .field-group .field-label {
+	width: 20%;
+	float: left;
+}
+.panel-list-item .field-group .field-items {
+	width: 80%;
+	float: left;
 }
 
 

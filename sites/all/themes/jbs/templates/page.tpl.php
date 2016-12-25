@@ -47,6 +47,9 @@
 		<div class="row">
 			<div class="col-lg-8">
 				<div class="head-line-block">
+					<?php print $title ;?>
+				</div>
+				<div>
 					<?php print $messages ;?>
 					<?php print render($page['content']); ?>
 				</div>

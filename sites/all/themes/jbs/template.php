@@ -475,6 +475,8 @@ function jbs_comment_post_forbidden($variables) {
 }
 
 function jbs_preprocess_node__jobs(&$variables){
+	$variables['content']['links']['comment']['#links']['comment-add']['attributes']['class'][] = 'btn btn-primary';
+	$variables['content']['links']['node']['#links']['node-readmore']['attributes']['class'][] = 'btn btn-default';
 }
 
 
