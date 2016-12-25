@@ -46,13 +46,9 @@
 	<div class="content">
 		<div class="row">
 			<div class="col-lg-8">
-				<div class="head-line-block">
-					<?php print $title ;?>
-				</div>
-				<div>
-					<?php print $messages ;?>
-					<?php print render($page['content']); ?>
-				</div>
+				<h2><?php print $title ;?></h2>
+				<?php print $messages ;?>
+				<?php print render($page['content']); ?>
 				<?php if($page['content_right_bar']):?>
 				<div class="col-lg-4">
 					<?php print render($page['content_right_bar']); ?>
