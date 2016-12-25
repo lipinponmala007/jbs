@@ -1,6 +1,34 @@
 <?php
 
 /**
+ * hook_theme
+ * @param unknown $existing
+ * @param unknown $type
+ * @param unknown $theme
+ * @param unknown $path
+ */
+function jbs_theme(&$existing, $type, $theme, $path) {
+  $hooks['user_login'] = array(
+      'template' => 'templates/user/user-login',
+      'render element' => 'form',
+  );
+  $hooks['user_pass'] = array(
+      'template' => 'templates/user/user-pass',
+      'render element' => 'form',
+  );
+  $hooks['user_register_form'] = array(
+      'template' => 'templates/user/user-register',
+      'render element' => 'form',
+  );
+
+  $hooks['user_profile_form'] = array(
+      'template' => 'templates/user/user-profile-edit',
+      'render element' => 'form',
+  );
+  return $hooks;
+}
+
+/**
 
 * Overrides theme_menu_tree().
 
@@ -48,8 +76,6 @@ function jbs_textfield($variables) {
   if ($element['#autocomplete_path'] && !empty($element['#autocomplete_input'])) {
     drupal_add_library('system', 'drupal.autocomplete');
     $element['#attributes']['class'][] = 'form-autocomplete';
-    $element['#attributes']['placeholder'] = array('Placeholder');
-
     $attributes = array();
     $attributes['type'] = 'hidden';
     $attributes['id'] = $element['#autocomplete_input']['#id'];
