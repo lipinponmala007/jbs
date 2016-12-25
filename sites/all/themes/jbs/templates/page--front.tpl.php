@@ -87,6 +87,8 @@
 	<!-- Top band start -->
 	<div class="top-band">
 		<div class="container">
+			<?php print $messages ;?>
+		
 			<?php print $featured_jobs_menu ;?>
 		</div>
 	</div>
@@ -95,7 +97,6 @@
 <!-- Search Banner end -->
 </div>
 <div class="clearfix"></div>
-
 <!-- Partner Logo Block start -->
 <div class="partner_logos text-center">
 	<div class="container">
