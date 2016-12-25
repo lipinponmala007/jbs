@@ -1,5 +1,6 @@
 <div>
-  <div><?php print $author; ?></div>
+  <div><?php
+print $author; ?></div>
   
   <div><?php print $subject; ?></div>
   <div><?php print $comment_body; ?></div>
