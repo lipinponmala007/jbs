@@ -5073,6 +5073,9 @@ span.customSelect.changed {
 }
 
 /* Search Forms Styles */
+.search_form {
+	margin: 40px 0 0;
+}
 .search_form.home-page {
 	margin: 8% 0 15%;
 }
@@ -5128,8 +5131,11 @@ body.home-page {
 	background: #fff;
 }
 .content {
-		background: #fff;
-		padding: 25px 15px;
+	background: #fff;
+	padding: 25px 15px;
+}
+.content .content  {
+	padding: 0;
 }
 /* Head Line Block styles */
 .head-line-block {
