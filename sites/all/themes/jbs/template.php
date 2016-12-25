@@ -48,6 +48,7 @@ function jbs_textfield($variables) {
   if ($element['#autocomplete_path'] && !empty($element['#autocomplete_input'])) {
     drupal_add_library('system', 'drupal.autocomplete');
     $element['#attributes']['class'][] = 'form-autocomplete';
+    $element['#attributes']['placeholder'] = array('Placeholder');
 
     $attributes = array();
     $attributes['type'] = 'hidden';
@@ -57,7 +58,7 @@ function jbs_textfield($variables) {
     $attributes['class'][] = 'autocomplete';
     $extra = '<input' . drupal_attributes($attributes) . ' />';
   }
-  $output = '<div class="col-sm-10"><input' . drupal_attributes($element['#attributes']) . ' /></div>';
+  $output = '<input' . drupal_attributes($element['#attributes']) . ' />';
   return $output . $extra;
 }
 

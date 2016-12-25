@@ -74,39 +74,27 @@
 		<ul class="nav navbar-nav navbar-right main-nav">
 			<li class="dropdown"><a href="#" class="dropdown-toggle"
 				data-toggle="dropdown">Menu<b class="caret"></b></a>
-        <?php print $main_menu_output?>
-      </li>
+				<?php print $main_menu_output?>
+			</li>
 		</ul>
 		<!-- Top Nav Ends -->
 	</div>
 </header>
 <!--header end-->
+<div class="clearfix"></div>
 <!-- Search Banner start -->
 <div class="search-block-wrap home-page">
 	<!-- Top band start -->
 	<div class="top-band">
 		<div class="container">
-
 			<?php print $featured_jobs_menu ;?>
-    </div>
+		</div>
 	</div>
 	<!-- Top band start -->
-
-	<div class="container">
-     <?php print render($page['search_bar']); ?>
-  </div>
+	<?php print render($page['search_bar']); ?>
 <!-- Search Banner end -->
-
-<!-- Content Area start -->
-<div class="container">
-  <div class="panel">
-    <div class="panel-body">
-      <div class="col-lg-12">
-       <?php print $messages ;?>
-    </div>
-  </div>
-</div> 
-<!-- Content Area  end -->
+</div>
+<div class="clearfix"></div>
 
 <!-- Partner Logo Block start -->
 <div class="partner_logos text-center">
@@ -115,7 +103,7 @@
 	</div>
 </div>
 <!-- Partner Logo Block end -->
-
+<div class="clearfix"></div>
 <!-- Pre Footer Starts -->
 <section class="pre-footer">
 	<div class="container">
@@ -189,7 +177,7 @@
 	</div>
 </section>
 <!-- Pre Footer Starts -->
-
+<div class="clearfix"></div>
 <!-- Footer Starts -->
 <footer class="footer">
 	<div class="container">
