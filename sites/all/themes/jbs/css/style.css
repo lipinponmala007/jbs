@@ -5157,3 +5157,24 @@ body.home-page {
 .posted_date {
 	font-size: 12px;
 }
+
+/* Panel List Item Styles */
+.panel-list-item {
+	border-top: 1px solid #ccc;
+	word-wrap: break-word;
+	margin-bottom: 15px;
+}
+.panel-list-item:hover .panel-heading {
+  box-shadow: inset 0 -2px 0 rgba(0, 122, 255, 1);
+  -moz-box-shadow: inset 0 -2px 0 rgba(0, 122, 255, 1);
+  -webkit-box-shadow: inset 0 -2px 0 rgba(0, 122, 255, 1);
+}
+.panel-list-item  .panel-body h3 {
+	margin: 0 0 20px;
+}
+.panel-list-item  .panel-body .field-type-text-with-summary {
+	margin: 0 0 20px;	
+}
+
+
+
