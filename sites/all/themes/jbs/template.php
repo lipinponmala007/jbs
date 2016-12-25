@@ -474,4 +474,7 @@ function jbs_comment_post_forbidden($variables) {
 
 }
 
+function jbs_preprocess_node__jobs(&$variables){
+}
+
 
